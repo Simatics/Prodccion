@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:aqua;
+
+}
+.container {
+    max-width: 1000px;
+    margin-left: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+.form-group {
+    margin-bottom: 15px;
+    line-height: 2;
+}
+.form-group label {
+    margin-bottom: 5px;
+    width: 100px;
+}
+.form-group input {
+    width: calc(100% - 10px);
+    padding: 5px;
+    font-size: 16px;
+}
+.form-group button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color:gainsboro;
+    color:dimgray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 440px;
+    font-weight: bold;
+    margin-left: 560px;
+}
+.form-group button:hover {
+    background-color:cornflowerblue;
+    color: white;
+}
+
+.resultado{
+    position: absolute;
+    display: none;
+    top: 10px; /* Distancia desde la parte superior */
+    left: 1150px; /* Distancia desde la izquierda */
+    width: 800px;
+    height: 1100px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+.formulario{
+   
+    display: grid;
+    grid-template-columns: repeat(5, 150px); /* 5 columnas de 100px cada una */
+    grid-template-rows: repeat(5, 150px);    /* 5 filas de 100px cada una */
+    gap: 10px; /* Espacio entre los elementos */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+
+
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+    color: black;
+    font-size: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; /* Para incluir padding y border en el tamaño total del elemento */
+}

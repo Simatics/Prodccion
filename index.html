@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstimaPro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Ingrese los parametros de las maquinas</h2>
+        <div class="form-group">
+            <label for="tiempoPro">Tiempo de producción (horas):</label><br>
+            <input style="width: 300px" type="number" step="any" id="tiempoPro" name="tiempoPro" required value="12">
+        </div>
+        <div class="formulario" id="simplexForm">
+            <div class="form-group">
+                <div>Maquinas</div>
+                <div>M1</div>
+                <div>M2</div>
+                <div>M3</div>
+                <div>M4</div>
+            </div>
+            <div class="form-group">
+                <label for="pesoM1">Peso de la cinta (KTex)</label>
+                <input type="number" step="any" id="pesoM1"  required placeholder="Peso maquina 1" value="8.01">
+                <input type="number" step="any" id="pesoM2"  required placeholder="Peso maquina 2" value="8.01">
+                <input type="number" step="any" id="pesoM3"  required placeholder="Peso maquina 3" value="8.01">
+                <input type="number" step="any" id="pesoM4"  required placeholder="Peso maquina 4" value="8.01">
+            </div>
+            <div class="form-group">
+                <label for="metrajeM1">Cantidad de llenado (m):</label>
+                <input type="number" step="any" id="metrajeM1"  required placeholder="Metraje maquina 1" value="5000">
+                <input type="number" step="any" id="metrajeM2"  required placeholder="Metraje maquina 2" value="5000">
+                <input type="number" step="any" id="metrajeM3"  required placeholder="Metraje maquina 3" value="5000">
+                <input type="number" step="any" id="metrajeM4"  required placeholder="Metraje maquina 4" value="5000">
+            </div>
+            <div class="form-group">
+                <label for="velocidadM1">Velocidad (m/min):</label>
+                <input type="number" step="any" id="velocidadM1" required placeholder="Velocidad maquina 1" value="100">
+                <input type="number" step="any" id="velocidadM2" required placeholder="Velocidad maquina 2" value="174">
+                <input type="number" step="any" id="velocidadM3" required placeholder="Velocidad maquina 3" value="174">
+                <input type="number" step="any" id="velocidadM4" required placeholder="Velocidad maquina 4" value="100">
+            </div>
+            <div class="form-group">
+                <label for="precioM1">Precio del Kg de cinta:</label>
+                <input type="number" step="any" id="precioM1" required placeholder="Precio del kg maquina 1" value="0.28">
+                <input type="number" step="any" id="precioM2" required placeholder="Precio del kg maquina 1" value="0.28">
+                <input type="number" step="any" id="precioM3" required placeholder="Precio del kg maquina 1" value="0.28">
+                <input type="number" step="any" id="precioM4" required placeholder="Precio del kg maquina 1" value="0.28">
+            </div>
+        </div>
+        <div class="form-group" >
+            <button id="btnCalcular" >Calcular</button>
+        </div>
+    </div>
+    <div class="resultado" id="result">
+        <script type="module" src="./codigo.js"></script>
+    </div>
+</body>
+</html>
